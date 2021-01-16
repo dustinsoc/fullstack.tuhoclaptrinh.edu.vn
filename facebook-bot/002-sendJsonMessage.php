@@ -11,7 +11,7 @@ $json = '{
       "type": "template",
       "payload": {
         "template_type": "button",
-        "text": "8h30 rồi kìa mấy má, vào System log giờ lẹ. 😎",
+        "text": "8h30 rồi kìa mấy má, vào System log giờ lẹ.",
         "buttons": [
           {
             "type": "web_url",
@@ -31,4 +31,13 @@ $soc->fb->setToken($token); // Cài đặt chuỗi token
 //! 3. Gửi và in ra mảng dữ liệu trả về
 $rs = $soc->fb->sendJsonMessage(json_decode($json, true));
 echo '<pre>';print_r($rs);exit; // Xem mảng dữ liệu trả về
+
+//! 4. Mẫu kết quả
+/**********
+Array
+(
+    [message_id] => m_kj7memxJqCPAfG639AETCf5l0m2M9ETyitTLQDPXTxJFe1T_uyDMAjOpxm6PW_sqVLv9yf9OJhG7965tTOwVwg
+    [thread_key] => t_3196563110445368
+)
+***********/
 ?>
