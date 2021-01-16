@@ -11,4 +11,12 @@
   //! 3. Gửi và in ra mảng dữ liệu trả về
   $rs = $soc->fb->sendMessage($thread, $message); // Gửi
   echo '<pre>';print_r($rs);exit; // Xem mảng dữ liệu trả về
+
+  /********** Mẫu kết quả
+  Array
+  (
+      [message_id] => m_VsxbeINiE4Xzrab6V53TU_5l0m2M9ETyitTLQDPXTxIDggkpOzShOs7CVn4iZ4QyLRppvxgcJyJyYuNU7_BQSA
+      [thread_key] => t_3196563110445368
+  )
+  ***********/
 ?>
