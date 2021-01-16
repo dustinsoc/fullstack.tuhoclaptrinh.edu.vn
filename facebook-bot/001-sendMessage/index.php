@@ -10,5 +10,5 @@
 
   //! 3. Gửi và in ra mảng dữ liệu trả về
   $rs = $soc->fb->sendMessage($thread, $message); // Gửi
-  var_dump($rs); // In mảng kết quả
+  echo '<pre>';print_r($rs);exit; // Xem mảng dữ liệu trả về
 ?>
